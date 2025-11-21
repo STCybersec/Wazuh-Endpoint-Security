@@ -34,10 +34,9 @@ This demonstrates FIM’s ability to detect and record unauthorized changes inst
 
 ---
 
-### 🛠️ 2. Vulnerability Detection & Management
-I enabled the Wazuh Vulnerability Detector module, allowing:
+### 🛠️ 2. Malware Detection & Management
+I enabled the Wazuh Malware Detector module, allowing:
 
-- Automatic CVE scanning of installed software
 - Detection of outdated or risky applications
 - Identification of vulnerable executables such as:
   - `driver_update.exe`
