@@ -17,11 +17,11 @@ Real-time detection of:
 - Changes inside monitored directories  
 
 **Files monitored in this project:**
-- `test1.txt` — created, modified, deleted  
-- `passwords.txt` — sensitive file  
-- `driver_update.exe` — simulated malicious installer  
-- `Dropper.dll` — simulated malware dropper  
-
+- `test1.txt` - created, modified, deleted  
+- `passwords.txt` - sensitive file  
+- `driver_update.exe` - simulated malicious installer  
+- `Dropper.dll` - simulated malware dropper  
+- `Realtime` - realtime monitoring with syscheck
 ---
 
 ### ✔️ 2. Malware & Suspicious File Detection
