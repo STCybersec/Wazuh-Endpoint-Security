@@ -34,6 +34,3 @@ Short passwords are highly vulnerable to:
 - brute-force attacks  
 - dictionary attacks  
 - offline cracking if hashes are stolen  
-
-### 🛠 Remediation  
-Group Policy Path:  
