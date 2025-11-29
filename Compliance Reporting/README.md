@@ -47,40 +47,83 @@ Located under:
 
 ---
 
-## 🔎 3. Sample CIS Benchmark Findings
+## 🔎 3. Sample CIS Benchmark Findings (Improved Section)
+**❌ 1. Minimum Password Length (CIS 1.1.4)**
 
-Below are real findings from the endpoint:
+Status: Failed
+Required: 14+ characters
+Detected: Less than 14
 
-### ❌ **1. Minimum Password Length (CIS 1.1.4)**  
-**Status:** Failed  
-**Required:** 14+ characters  
-**Detected:** Less than 14  
-
-**Rationale:**  
+Rationale:
 Short passwords are vulnerable to dictionary and brute-force attacks.
 
-**Remediation:**  
-Configure via Group Policy:  
-`Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy → Minimum password length`
+Remediation:
+Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy → Minimum password length
 
-**Framework Mappings:**  
-- **CIS:** 1.1.4  
-- **ISO 27001:** A.9.4.3  
-- **PCI DSS 4.0:** 2.2.2, 8.3.5, 8.3.6, 8.6.3  
-- **SOC 2:** CC6.1  
-- **CMMC v2.0:** IA.L2-3.5.7  
+Framework Mappings:
 
----
+- CIS: 1.1.4
 
-### ❌ **2. Minimum Password Age (CIS 1.1.2)**  
-**Status:** Failed  
-Weak password age allows users to cycle passwords quickly to bypass history requirements.
+- ISO 27001: A.9.4.3
+
+- PCI DSS 4.0: 2.2.2, 8.3.5, 8.3.6, 8.6.3
+
+- SOC 2: CC6.1
+
+- CMMC v2.0: IA.L2-3.5.7
 
 ---
 
-### ❌ **3. Account Lockout Duration & Threshold (CIS 1.2.x)**  
-**Status:** Failed  
-These settings protect against brute-force attacks but were not correctly configured.
+**❌ 2. Minimum Password Age (CIS 1.1.2)**
+
+Status: Failed
+Required: ≥ 1 day
+Detected: 0 days
+
+Rationale:
+A minimum password age prevents users from cycling through many passwords quickly to bypass password history requirements.
+
+Remediation:
+Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy → Minimum password age
+
+Framework Mappings:
+
+- CIS: 1.1.2
+
+- ISO 27001: A.9.4.3
+
+- SOC 2: CC6.1
+
+---
+
+**❌ 3. Account Lockout Duration & Threshold (CIS 1.2.x)**
+
+Status: Failed
+Required:
+
+- Threshold: 10 invalid attempts or fewer
+
+- Lockout Duration: ≥ 15 minutes
+
+- Reset Counter After: 15 minutes
+
+- Detected: Not configured correctly
+
+**Rationale:**
+These controls protect against brute-force attempts by locking an account after repeated failed logins.
+
+**Remediation:**
+Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Account Lockout Policy
+
+Framework Mappings:
+
+- CIS: 1.2.x
+
+- PCI DSS 4.0: 8.3.6
+
+- ISO 27001: A.9.4.2
+
+- CMMC: IA.L2-3.5.8
 
 ---
 
