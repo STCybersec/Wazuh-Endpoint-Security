@@ -1,0 +1,8 @@
+<group name="virustotal,">
+  <rule id="200100" level="12">
+    <if_sid>87105</if_sid>
+    <match>malicious.: 1</match>
+    <options>no_full_log</options>
+    <group>active_response,malware,</group>
+  </rule>
+</group>
