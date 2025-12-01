@@ -1,0 +1,3 @@
+ECHO Deleting file: %1 >> "C:\Program Files (x86)\ossec-agent\active-response\active-responses.log"
+REM ...
+ECHO Finished deleting file: %1 >> "C:\Program Files (x86)\ossec-agent\active-response\active-responses.log"
