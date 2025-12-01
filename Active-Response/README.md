@@ -134,5 +134,3 @@ SOC / Blue Team Trainee • Ethical Hacking • Wazuh • Kali Linux
 🛡️ Automatic quarantine confirmed working  
 
 ---
-
-If you need a **badge section**, **animated diagram**, or want me to generate the `workflow_explanation.md`, just tell me — I’ll generate it for you.
