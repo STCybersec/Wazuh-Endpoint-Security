@@ -5,11 +5,11 @@ This module includes evidence showing:
 ## 1. VT Detection (66 engine positives)
 `/screenshots/virustotal-detection.png`
 
-## 2. Before Quarantine
+## 2. Before Deletion
 `/screenshots/hr_policy_update_before.png`  
 File is visible in `C:\Downloads`
 
-## 3. After Quarantine
+## 3. After Deletion
 `/screenshots/hr_policy_update_after.png`  
 File successfully removed from the directory
 
