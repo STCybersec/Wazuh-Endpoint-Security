@@ -32,7 +32,7 @@ A malicious file is confirmed when:
   
 ---
 
-# 📄 **3. `03_active_response_workflow.md` — Rule + AR Logic**
+## 📄 3. `03_active_response_workflow.md` - Rule + AR Logic
 
 ```md
 # 🔥 Active Response Workflow
@@ -42,7 +42,7 @@ This module relies on:
 - Custom rule **200100**
 - VirusTotal rule **87105**
 - Active Response command execution
-- PowerShell file quarantine script
+- Batch file removal script
 
 ## 🔐 Detection Chain
 
