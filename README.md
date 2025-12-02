@@ -189,10 +189,10 @@ This is documented in docs/narrative.md.
 
 This project shows my ability to:
 
-✔ Configure and tune Wazuh like a real SOC analyst
-✔ Detect vulnerabilities, threats, malware, and suspicious changes
-✔ Build automated active-response workflows
-✔ Implement Incident Response lifecycle
-✔ Produce compliance-ready evidence
-✔ Document professional security artefacts and SOC capabilities.
+- ✔ Configure and tune Wazuh like a real SOC analyst
+- ✔ Detect vulnerabilities, threats, malware, and suspicious changes
+- ✔ Build automated active-response workflows
+- ✔ Implement Incident Response lifecycle
+- ✔ Produce compliance-ready evidence
+- ✔ Document professional security artefacts and SOC capabilities.
 
