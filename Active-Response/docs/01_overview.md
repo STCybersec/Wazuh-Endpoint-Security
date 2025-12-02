@@ -1,15 +1,15 @@
 # 🔍 Active Response + VirusTotal Module Overview
 
-This module demonstrates how Wazuh detects malicious files using the **VirusTotal integration**, triggers a **custom Active Response rule**, and automatically **quarantines** the file on the Windows endpoint.
+This module demonstrates how Wazuh detects malicious files using the VirusTotal integration, triggers a custom Active Response rule, and automatically removes the malicious file from the Windows endpoint.
 
 The end-to-end workflow includes:
 
 - File dropped into `C:\Downloads`
 - Wazuh FIM detects file creation
 - The file hash is sent to VirusTotal
-- VirusTotal reports **positives > 1**
+- VirusTotal reports **muultiple malicious positives**
 - Custom rule triggers Active Response
-- Quarantine script executes on the agent
+- The file-removal script executes on the agent
 - File is removed and isolated securely
 - Alerts and logs are generated in Wazuh Dashboard
 
