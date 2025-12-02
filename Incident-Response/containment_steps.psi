@@ -1,0 +1,35 @@
+# Containment Script – Windows Endpoint (PowerShell)
+# Used for isolating suspicious files, killing risky processes, and collecting artifacts.
+
+Write-Host "[*] Starting containment actions..." -ForegroundColor Cyan
+
+# 1. Kill suspicious processes
+$targets = @("powershell.exe", "wscript.exe", "cmd.exe")
+foreach ($proc in $targets) {
+    Get-Process $proc -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+}
+
+# 2. Remove malicious files
+$paths = @(
+    "C:\Downloads\HR_Policy_Update_2025.txt",
+    "C:\Temp\*.txt",
+    "C:\Users\Public\*.txt"
+)
+
+foreach ($file in $paths) {
+    Remove-Item $file -Force -ErrorAction SilentlyContinue
+}
+
+# 3. Disable vulnerable applications temporarily
+$apps = @(
+    "C:\Program Files\Mozilla Firefox\firefox.exe",
+    "C:\Program Files\Teams Installer\teams.exe"
+)
+
+foreach ($a in $apps) {
+    If (Test-Path $a) {
+        icacls $a /deny Users:RX
+    }
+}
+
+Write-Host "[+] Containment complete."
