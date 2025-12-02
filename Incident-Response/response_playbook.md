@@ -64,5 +64,38 @@ Performed:
   - Teams Classic
   - Lenovo System Update (vulnerable version)
 - Cleaned temporary directories
+/var/ossec/bin/agent_control -R 002(ID of endpoint)
+
+---
+
+# 5. 🔄 Recovery Phase
+
+Verification included:
+
+- Running Syscollector scan again
+- Confirming software versions updated
+- Checking for new vulnerabilities
+- Ensuring FIM baseline is clean
+
+System declared restored when:
+
+✔ No new alerts  
+✔ No malicious files on disk  
+✔ Vulnerable software patched  
+
+---
+
+# 6. 📘 Post-Incident Activity
+
+Deliverables generated:
+
+- Incident Timeline
+- CVE Analysis matrix
+- Patch validation report
+- Recommendations for prevention
+- Updated policies (hardening guidelines)
+
+This playbook ensures repeatable, SOC-grade response handling.
+
 - Cleared Windows Prefetch entries if needed
 - Executed a full vulnerability re-scan via command:
