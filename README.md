@@ -178,10 +178,11 @@ This is documented in docs/narrative.md.
 |------------------|-------------|
 | `/screenshots/`  | Evidence of alerts, FIM events, vulnerability detections |
 | `/hashes/`       | Before/after SHA256 hash results |
-| `test1_events.md` | Creation, modification, deletion logs |
-| `vuln_alerts.md` | Notes on flagged executables and detections |
-| `fim_config.xml` | Example FIM configuration used |
-| `project_summary.md` | High-level description of the completed setup |
+| `/sample-alerts/` | Raw JSON alerts extracted from Wazuh |
+| `configs.md` | Manager & agent configurations (FIM, Malware, Vulnerability Detector, Syscollector, AR ruless |
+| `/scripts/` | .ps1 and .sh scripts used for Active Response |
+| `/docs/` | narrative.md (Case study + IR workflow) |
+| `README.md` | README.md |
 
 ---
 
