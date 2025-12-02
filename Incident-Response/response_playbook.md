@@ -26,7 +26,7 @@ Determine:
 - Severity: **High**
 - Impact: Integrity + Execution risk
 - Attack Vector: Local + User Execution
-- Risk Score: Based on CVSS (7.8 – 9.8)
+- Risk Score: Based on CVSS (7.8 - 9.8)
 
 Steps performed:
 
