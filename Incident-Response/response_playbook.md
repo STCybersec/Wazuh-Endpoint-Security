@@ -26,7 +26,7 @@ Determine:
 - Severity: **High**
 - Impact: Integrity + Execution risk
 - Attack Vector: Local + User Execution
-- Risk Score: Based on CVSS (7.8 - 9.8)
+- Risk Score: Based on CVSS (7.8 – 9.8)
 
 Steps performed:
 
@@ -64,7 +64,10 @@ Performed:
   - Teams Classic
   - Lenovo System Update (vulnerable version)
 - Cleaned temporary directories
-/var/ossec/bin/agent_control -R 002(ID of endpoint)
+- Cleared Windows Prefetch entries if needed
+- Executed a full vulnerability re-scan via command:
+
+/var/ossec/bin/agent_control -R 002
 
 ---
 
@@ -96,6 +99,3 @@ Deliverables generated:
 - Updated policies (hardening guidelines)
 
 This playbook ensures repeatable, SOC-grade response handling.
-
-- Cleared Windows Prefetch entries if needed
-- Executed a full vulnerability re-scan via command:
