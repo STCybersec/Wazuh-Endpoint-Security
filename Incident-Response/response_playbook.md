@@ -67,7 +67,7 @@ Performed:
 - Cleared Windows Prefetch entries if needed
 - Executed a full vulnerability re-scan via command:
 
-/var/ossec/bin/agent_control -R 002
+/var/ossec/bin/agent_control -R 002 (ID of endpoint)
 
 ---
 
