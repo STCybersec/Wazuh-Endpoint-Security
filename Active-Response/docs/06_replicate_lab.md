@@ -36,15 +36,11 @@ Active Response sends the JSON event to the Windows agent.
 
 ---
 
-## 6️⃣ File is Quarantined
-
-Moved to:
-
-active-response\quarantine\
+## 6️⃣ File is Deleted
 
 Logs written to:
 
-active-response\logs\quarantine_agent.log
+active-response\active_response\remove_agent.txt
 
 ---
 
@@ -58,4 +54,4 @@ Active Response Logs → agent 002
 
 ---
 
-This fully simulates enterprise-grade automated malware containment.
+This fully simulates enterprise-grade automated malware removal.
