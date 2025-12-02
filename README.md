@@ -1,4 +1,4 @@
-# 🛡️ Wazuh Monitoring Project – Completed Implementation
+# 🛡️ Wazuh Monitoring Project - Completed Implementation
 
 This repository documents my completed end-to-end Wazuh security monitoring setup, focused on **file integrity monitoring, malware detection, vulnerability detection, active response, email alerting, and compliance-aligned event tracking** across Windows endpoints.
 
