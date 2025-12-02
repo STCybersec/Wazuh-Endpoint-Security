@@ -21,20 +21,20 @@ When a file on a monitored Windows endpoint is scanned using Wazuh’s VirusTota
 
 ## 🏛️ **Repository Structure**
 
-configs/
+- configs/
   ossec.conf             → Manager command definition for agent-side deletion
   local_rules.xml        → Custom rule triggering file-removal AR
 
-scripts/
-  remove-malicious.ps1   → PowerShell script executed on Windows agents
+- scripts/
+  remove-threat.bat   → Batchfile script executed on Windows agents
 
-evidence/
+- evidence/
   vt_detection.json               → Raw VirusTotal alert
   screenshot_before_removal.png   → File present before AR
   screenshot_after_removal.png    → File deleted after AR
   screenshot_vt_positives.png     → VirusTotal results (malicious score)
 
-docs/
+- docs/
   workflow_explanation.md         → Full technical incident walkthrough
 
 
@@ -57,12 +57,11 @@ Wazuh uploads the file hash to VirusTotal, returning:
 
 - Watches for rule 87105  
 - Confirms the file is inside `C:\Downloads\`  
-- Executes the command **remove-malicious-file**
+- Executes the command **remove-threat-file**
 
 ---
 
-### **Windows Agent Runs remove-malicious.ps1
-
+### **Windows Agent Runs remove-threat.bat\
 The script:
 
 - Parses the alert JSON for file path
