@@ -1,7 +1,7 @@
 
 ---
 
-# 📄 **3. `03_active_response_workflow.md` — Rule + AR Logic**
+# 📄 3. `03_active_response_workflow.md` - Rule + AR Logic
 
 ```md
 # 🔥 Active Response Workflow
@@ -11,7 +11,7 @@ This module relies on:
 - Custom rule **200100**
 - VirusTotal rule **87105**
 - Active Response command execution
-- PowerShell file quarantine script
+- Batchtfile file removal script
 
 ## 🔐 Detection Chain
 
@@ -22,7 +22,7 @@ This module relies on:
 5. Rule 87105 fires  
 6. Custom rule 200100 matches `malicious:1`  
 7. Active Response executes  
-8. `quarantine.ps1` runs on the agent  
+8. `remove-threat.bat` runs on the agent  
 
 This automation prevents malware from being opened by users.
 
