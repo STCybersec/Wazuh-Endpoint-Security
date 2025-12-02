@@ -53,5 +53,3 @@ The endpoint is:
 - Patched  
 - Fully monitored  
 - Returned to safe operational status  
-
-This completes the incident response cycle.
