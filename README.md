@@ -55,9 +55,9 @@ I fully configured the Vulnerability Detector module with Syscollector.
 
 Wazuh automatically identified vulnerable software on the endpoint, including simulated CVEs:
 
-- CVE-2025-4918 – Firefox 126.0
+- CVE-2025-4918 - Firefox 126.0
 
-- CVE-2023-24881 – Microsoft Teams
+- CVE-2023-24881 - Microsoft Teams
 
 - Legacy application issues (7zip, VLC, Notepad++)
 
