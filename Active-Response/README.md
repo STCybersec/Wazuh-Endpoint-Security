@@ -1,4 +1,4 @@
-## 🛡️ Wazuh Active Response Project – VirusTotal Automated File Removal
+## 🛡️ Wazuh Active Response Project - VirusTotal Automated File Removal
 
 This project demonstrates a complete end-to-end Active Response workflow using Wazuh + VirusTotal to automatically detect, alert on, and remove malicious files from Windows endpoints.
 
