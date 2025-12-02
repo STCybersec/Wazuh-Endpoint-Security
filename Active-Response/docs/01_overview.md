@@ -20,4 +20,4 @@ This module replicates a real-world SOC workflow used in:
 - Automated incident response  
 - Hash-based threat intelligence enforcement  
 
-It serves as a practical demonstration for SOC Tier 1–2 analysts, IR teams, and threat hunters.
+It serves as a practical demonstration for SOC Tier 1-2 analysts, IR teams, and threat hunters.
