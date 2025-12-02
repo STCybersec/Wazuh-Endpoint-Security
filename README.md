@@ -115,18 +115,18 @@ The repo also includes compliance evidence such as logs, hashes, screenshots, an
 
 ---
 
-## 🚨 7. Incident Response Simulation (NEW)
+## 🚨 7. Incident Response Simulation
 
 I added a full Incident Response workflow, showing how a SOC analyst handles a malicious file drop.
 
 The process demonstrates:
 
-## 🟦 1. Detection
+### 🟦 1. Detection
 
 - Wazuh FIM detects a new unauthorized file: Dropper.dll
 - Alert generated → email sent → high severity.
 
-## 🟧 2. Analysis
+### 🟧 2. Analysis
 
 - Hash verification
 
@@ -136,7 +136,7 @@ The process demonstrates:
 
 - Checking parent process
 
-## 🟥 3. Containment
+### 🟥 3. Containment
 
 - Active Response deletes the malicious file using:
 
@@ -144,7 +144,7 @@ The process demonstrates:
 
 - remove-threat.sh
 
-## 🟩 4. Eradication
+### 🟩 4. Eradication
 
 - Cleaning directory
 
@@ -152,7 +152,7 @@ The process demonstrates:
 
 - Validating no related processes running
 
-## 🟦 5. Recovery
+### 🟦 5. Recovery
 
 - Confirming file integrity stability
 
@@ -160,7 +160,7 @@ The process demonstrates:
 
 - Updating documentation
 
-## 🟨 6. Lessons Learned
+### 🟨 6. Lessons Learned
 
 - Add directory to stricter monitoring
 
