@@ -73,4 +73,3 @@ This incident validated:
 - Correlating vulnerabilities with risk exposure
 - Complete SOC-style reporting and documentation
 
-This file serves as the high-level summary for the incident module.
