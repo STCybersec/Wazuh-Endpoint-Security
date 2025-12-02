@@ -1,4 +1,4 @@
-# 🛡️ Incident Overview – Wazuh Endpoint Security
+# 🛡️ Incident Overview - Wazuh Endpoint Security
 
 This document summarizes the incident response approach used in the Wazuh Endpoint Security project.  
 The goal is to demonstrate a full SOC workflow using Wazuh alerts, VirusTotal intelligence, and Active Response automation.
@@ -29,7 +29,7 @@ Wazuh detected:
    - Alert ID: *1764583922.55247906*
 
 2. **High-risk vulnerabilities on the same endpoint**
-   - CVE-2022-4568 (Privilege Escalation – Lenovo System Update)
+   - CVE-2022-4568 (Privilege Escalation - Lenovo System Update)
    - CVE-2023-24881 (Microsoft Teams)
    - Firefox RCE vulnerabilities
 
